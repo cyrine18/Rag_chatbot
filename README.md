@@ -61,11 +61,7 @@ Rag_chatbot/
 │   └── my_satel_data.csv
 ├── requirements.txt           # Python dependencies
 ├── README.md                  # This file
-
-
-
-
-
+```
 
 
 ## Dependencies
