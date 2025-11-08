@@ -4,7 +4,7 @@
 
 This project is a **Retrieval-Augmented Generation (RAG) chatbot** that provides intelligent, context-aware answers about Hikvision and Satel security products. Built with modern AI technologies, it combines semantic search, vector databases, and large language models to deliver accurate product information and technician data.
 
-###  What It Does
+## What It Does
 
 - Product Intelligence: Ask natural language questions about Hikvision and Satel products and get detailed, accurate answers
 - Product Comparison: Search and compare product characteristics, specifications, and features
@@ -64,20 +64,7 @@ Rag_chatbot/
 
 
 
-## Features by Category
 
-### Technicien
-- Query technician information using the integrated agent
-- Chat history is maintained during the session
-- Requires Google Drive API credentials (see `CREDENTIALS_SETUP.md`)
-
-### Hikvision Product
-- **Ask about an item**: Search for products and ask questions about specific items
-- **Search about caractéristiques**: Search products by characteristics and compare them
-
-### Satel Product
-- **Ask about an item**: Search for products and ask questions about specific items
-- **Search about caractéristiques**: Search products by characteristics and compare them
 
 
 
