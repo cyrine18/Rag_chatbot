@@ -1,33 +1,20 @@
 # RAG Chatbot for Hikvision and Satel Products
 
-## 📖 Overview
+##  Overview
 
 This project is a **Retrieval-Augmented Generation (RAG) chatbot** that provides intelligent, context-aware answers about Hikvision and Satel security products. Built with modern AI technologies, it combines semantic search, vector databases, and large language models to deliver accurate product information and technician data.
 
-### 🎯 What It Does
+###  What It Does
 
-- **🔍 Product Intelligence**: Ask natural language questions about Hikvision and Satel products and get detailed, accurate answers
-- **📊 Product Comparison**: Search and compare product characteristics, specifications, and features
-- **👨‍💼 Technician Agent**: Advanced LangChain-powered agent that intelligently queries technician information, planning schedules, and daily reports from Google Drive
-- **🤖 Intelligent Agent System**: Multi-tool agent architecture that automatically routes queries to specialized tools:
+- ** Product Intelligence**: Ask natural language questions about Hikvision and Satel products and get detailed, accurate answers
+- ** Product Comparison**: Search and compare product characteristics, specifications, and features
+- ** Technician Agent**: Advanced LangChain-powered agent that intelligently queries technician information, planning schedules, and daily reports from Google Drive
+- ** Intelligent Agent System**: Multi-tool agent architecture that automatically routes queries to specialized tools:
   - **Technician Search**: Find technician contact information, equipment, and details
   - **Planning Search**: Query work schedules and assignments by date
   - **Daily Reports**: Access and analyze daily work reports and equipment usage
   - **Merged Data Analysis**: Complex queries across multiple dates and time periods
 - **🕷️ Data Collection**: Automated web scraping tools to collect and update product data from manufacturer websites
-
-### ✨ Key Features
-
-- **🧠 RAG-Powered**: Uses FAISS vector stores and LangChain for semantic search and retrieval
-- **🤖 Multi-Agent Architecture**: Intelligent agent system with specialized tools for technician queries, planning searches, and daily report analysis
-- **📚 Multi-Source**: Supports both CSV and PDF data sources for comprehensive information
-- **⚡ Fast & Efficient**: Cached FAISS indices for optimal performance
-- **🎨 Modern UI**: Beautiful Streamlit interface with chat-style interactions
-- **🔒 Secure**: Environment-based configuration with protected credentials
-- **📦 Modular Architecture**: Clean, maintainable code structure ready for production
-- **🔗 Google Drive Integration**: Seamless access to technician data, planning schedules, and daily reports stored in Google Sheets
-
-
 
 ****
 
