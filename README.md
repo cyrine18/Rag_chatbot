@@ -1,6 +1,35 @@
 # RAG Chatbot for Hikvision and Satel Products
 
-A comprehensive RAG (Retrieval-Augmented Generation) chatbot application for querying Hikvision and Satel product information, with an integrated technician agent.
+## 📖 Overview
+
+This project is a **Retrieval-Augmented Generation (RAG) chatbot** that provides intelligent, context-aware answers about Hikvision and Satel security products. Built with modern AI technologies, it combines semantic search, vector databases, and large language models to deliver accurate product information and technician data.
+
+### 🎯 What It Does
+
+- **🔍 Product Intelligence**: Ask natural language questions about Hikvision and Satel products and get detailed, accurate answers
+- **📊 Product Comparison**: Search and compare product characteristics, specifications, and features
+- **👨‍💼 Technician Agent**: Advanced LangChain-powered agent that intelligently queries technician information, planning schedules, and daily reports from Google Drive
+- **🤖 Intelligent Agent System**: Multi-tool agent architecture that automatically routes queries to specialized tools:
+  - **Technician Search**: Find technician contact information, equipment, and details
+  - **Planning Search**: Query work schedules and assignments by date
+  - **Daily Reports**: Access and analyze daily work reports and equipment usage
+  - **Merged Data Analysis**: Complex queries across multiple dates and time periods
+- **🕷️ Data Collection**: Automated web scraping tools to collect and update product data from manufacturer websites
+
+### ✨ Key Features
+
+- **🧠 RAG-Powered**: Uses FAISS vector stores and LangChain for semantic search and retrieval
+- **🤖 Multi-Agent Architecture**: Intelligent agent system with specialized tools for technician queries, planning searches, and daily report analysis
+- **📚 Multi-Source**: Supports both CSV and PDF data sources for comprehensive information
+- **⚡ Fast & Efficient**: Cached FAISS indices for optimal performance
+- **🎨 Modern UI**: Beautiful Streamlit interface with chat-style interactions
+- **🔒 Secure**: Environment-based configuration with protected credentials
+- **📦 Modular Architecture**: Clean, maintainable code structure ready for production
+- **🔗 Google Drive Integration**: Seamless access to technician data, planning schedules, and daily reports stored in Google Sheets
+
+
+
+****
 
 ## Features
 
@@ -51,54 +80,7 @@ Rag_chatbot/
 ├── requirements.txt           # Python dependencies
 ├── README.md                  # This file
 
-```
 
-## Installation
-
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd Rag_chatbot
-```
-
-2. Create a virtual environment (recommended):
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-3. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-4. Place your data files in the `data/` directory:
-   - `my_hikvision_data.csv` - Hikvision product data
-   - `my_satel_data.csv` - Satel product data
-   
-   Or use the web scraping scripts in `scripts/` to collect data:
-   ```bash
-   python scripts/hikvision_scraper.py
-   python scripts/satel_scraper.py
-   ```
-
-5. **Setup Google Drive API credentials** (for technician agent):
-   - Download `client_secrets.json` from Google Cloud Console
-   - Place it in the **project root directory** (same folder as `app.py`)
-   - See `CREDENTIALS_SETUP.md` for detailed instructions
-
-6. Configure API keys in `config/settings.py`:
-   - Set your `OPENAI_API_KEY` (or Groq API key)
-   - Configure `OPENAI_API_BASE` if using Groq
-
-## Usage
-
-Run the Streamlit application:
-```bash
-streamlit run app.py
-```
-
-The application will open in your browser at `http://localhost:8501`
 
 ## Features by Category
 
@@ -115,13 +97,7 @@ The application will open in your browser at `http://localhost:8501`
 - **Ask about an item**: Search for products and ask questions about specific items
 - **Search about caractéristiques**: Search products by characteristics and compare them
 
-## Configuration
 
-Edit `config/settings.py` to customize:
-- API keys and endpoints
-- Model parameters (temperature, chunk size, etc.)
-- Data file paths
-- Retrieval parameters (k values for retrievers)
 
 ## Dependencies
 
@@ -133,28 +109,6 @@ Edit `config/settings.py` to customize:
 - **PyDrive**: Google Drive API access (for technician agent)
 - **Crawl4AI**: Web scraping (optional, for data collection)
 
-## Data Collection
-
-The project includes web scraping scripts to collect product data:
-
-- **Hikvision Scraper**: `scripts/hikvision_scraper.py` - Scrapes Hikvision product data
-- **Satel Scraper**: `scripts/satel_scraper.py` - Scrapes Satel product data
-
-See `scripts/README.md` for detailed usage instructions.
-
-## Important Files Location
-
-### Credentials (Project Root Directory)
-```
-Rag_chatbot/
-├── app.py
-├── client_secrets.json      ← Place Google Drive credentials here
-├── credentials.json         ← Created automatically (don't commit)
-└── ...
-```
-
-Both files are already in `.gitignore` - they will NOT be committed to GitHub.
-
 ## Notes
 
 - The application uses Groq API (via OpenAI-compatible interface) by default
@@ -163,10 +117,4 @@ Both files are already in `.gitignore` - they will NOT be committed to GitHub.
 - The technician agent requires Google Drive API access (see `CREDENTIALS_SETUP.md`)
 - Web scraping scripts require `crawl4ai` and `beautifulsoup4` (optional dependencies)
 
-## License
 
-[Add your license here]
-
-## Contributing
-
-[Add contribution guidelines here]
