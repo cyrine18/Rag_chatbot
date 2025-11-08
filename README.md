@@ -6,15 +6,11 @@ This project is a **Retrieval-Augmented Generation (RAG) chatbot** that provides
 
 ###  What It Does
 
--  Product Intelligence: Ask natural language questions about Hikvision and Satel products and get detailed, accurate answers
-- Product Comparison: Search and compare product characteristics, specifications, and features
-- Technician Agent: Advanced LangChain-powered agent that intelligently queries technician information, planning schedules, and daily reports from Google Drive
--  Intelligent Agent System: Multi-tool agent architecture that automatically routes queries to specialized tools:
-  - **Technician Search**: Find technician contact information, equipment, and details
-  - **Planning Search**: Query work schedules and assignments by date
-  - **Daily Reports**: Access and analyze daily work reports and equipment usage
-  - **Merged Data Analysis**: Complex queries across multiple dates and time periods
--  Data Collection: Automated web scraping tools to collect and update product data from manufacturer websites
+- ** Product Intelligence**: Ask natural language questions about Hikvision and Satel products and get detailed, accurate answers
+- ** Product Comparison**: Search and compare product characteristics, specifications, and features
+- ** Technician Agent**: Query technician information, planning schedules, and daily reports via integrated Google Drive agent
+- **Intelligent Agent System**: Advanced LangChain agent that intelligently routes queries to specialized tools for technician data, planning information, and daily reports
+- ** Data Collection**: Automated web scraping tools to collect and update product data from manufacturer websites
 
 ****
 
