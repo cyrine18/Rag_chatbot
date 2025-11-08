@@ -50,10 +50,7 @@ Rag_chatbot/
 │   └── my_satel_data.csv
 ├── requirements.txt           # Python dependencies
 ├── README.md                  # This file
-├── SETUP_INSTRUCTIONS.md     # Setup guide
-├── CREDENTIALS_SETUP.md      # Google Drive credentials guide
-├── MIGRATION_GUIDE.md        # Migration instructions
-└── GITHUB_README.md          # GitHub preparation guide
+
 ```
 
 ## Installation
